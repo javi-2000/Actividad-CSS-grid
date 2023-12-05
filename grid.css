@@ -1,0 +1,86 @@
+.calculator{
+    display: grid;
+    justify-content: center;
+    grid-gap: 0px;
+    align-items: center;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "output output output output"
+    "suma resta mult divis"
+    "siete ocho nueve eq"
+    "cuatro cinco seis eq"
+    "uno dos tres eq"
+    "cero . AC eq";
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 -5px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+#output {
+    grid-area: output;
+    font-size: 1.3rem;
+    background-color: #424c52;
+    color: aliceblue;
+    height: 40px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.operator, .button, .equal {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operator{
+    background-color: #D2DCE3;
+    border-right: 2px solid #899DAD;
+    border-bottom: 2px solid #899DAD;
+}
+
+.button{
+    background-color: #EFF2F5;
+}
+
+.equal{
+    background-color: #F77077;
+}
+#suma{
+    grid-area: suma;
+
+}
+#resta{
+    grid-area: resta;
+}
+
+#mult{
+    grid-area: mult;
+}
+#divis{
+    grid-area: divis;
+    border-right: none;
+}
+#eq{
+    grid-area: eq;
+    height: 246px;
+}
+
+#siete, #cuatro, #uno, #ocho, #cinco, #dos, #nueve, #seis, #tres {
+    border-right: 2px solid #899DAD;
+    border-bottom: 2px solid #899DAD;
+}
+
+#cero, #punto, #AC{
+    border-right: 2px solid #899DAD;
+}
+
